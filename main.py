@@ -14,6 +14,7 @@ from paho.mqtt import client as mqtt_client
     Subst arduino serial port name 
 """
 
+#set your serial port that is used in arduino
 arduino = serial.Serial("/dev/cu.usbmodem14101", 9600)
 arduino.timeout = 1
 
@@ -21,7 +22,7 @@ arduino.timeout = 1
 #port = 'your broker port'
 #topic = "python/mqtt"
 #client_id = f'python-mqtt-{random.randint(0,1000)}'
-#username = 'usernmae'
+#username = 'username'
 #password = 'password'
 
 topicRead = 'python/commandToArduino'
@@ -152,7 +153,6 @@ def publish(client):
             counter_msg += 1
     except KeyboardInterrupt:
         print("Fine")
-
 
 def on_message(client, userdata, msg):
 

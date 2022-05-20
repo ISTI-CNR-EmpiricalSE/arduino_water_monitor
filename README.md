@@ -2,6 +2,33 @@
 ## Overview
 Arduino Water Monitor è un sistema di misurazione del flusso di un corso d'acqua e del livello di profondità. Può essere impiegato per la prevenzione di allagamenti o per il semplice monitoraggio relativo ad oggetti di osservazione. I dati raccolti dal sensore vengono inviati ad un topic dedicato attraverso un broker MQTT e il client Telegraf, iscritto al topic, li rende disponbili nel database di tipo time-stamp InfluxDB. Il microcontrollore usato è Arduino UNO, ma può essere compatibile anche con ESP32 tramite l'IDE di Arduino.
 
+## Versioni
+
+### Arduino UNO
+
+Puoi trovare diverse versioni del progetto:
+1) Arduino Sketch + Script python + Sensore Acqua YS-F201 (branch/master)
+   * lo sketch di arduino si occupa di effettuare le letture dei dati e codificare i messaggi in formato json
+   * tramite la porta seriale sono inviati allo script python
+   * lo script agisce da publisher nel topic MQTT dedicato al sensore
+   * il messaggio json è della forma: {"CurFlowRate":0,"TotVolumeRate":0,"Long":43.71,"Lat":10.42}
+
+2) Arduino Sketch con Display LCD I2C + sensore profondità
+   * Il sensore profondità si occupa di misurare la profondità dell'acqua su 3 livelli differenti:
+      - livello 1: 3cm
+      - livello 2: 5cm
+      - livello 3: 10cm
+   * Le informazioni sono stampate nel display LCD (16x2) 
+
+### esp32
+
+ 1) Arduino Sketch con Display LCD + Sensore profondità + Sensore ultrasuoni + Sensore Acqua YS-F201 (Telegraf&InfluxDB usage)
+   * Le informazioni raccolte dal sensore riguardano
+      - la profondità dell'acqua
+      - il flusso dell'acqua
+   * lo sketch arduino invia le informazioni dei sensori in maniera diretta al topic MQTT 
+   * il client Telegraf si occupa di leggere i messaggi del topic MQTT e di registrarli nel database Influxdb (guarda la guida sotto per l'installazione e configurazione)
+
 ## Usage
 
 * ⛰️ Sensore a valle o a monte per prevenire rischio idreogeologico

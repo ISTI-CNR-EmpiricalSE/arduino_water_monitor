@@ -7,7 +7,7 @@ const unsigned long eventIntervalBlinkLed = 500;      // event interval to handl
 unsigned long previusMillis1 = 0;                     // previus MS sensor reading
 unsigned long previusMillis2 = 0;                     // previus MS values sending
 unsigned long previusMillis3 = 0;                     // previus MS led blinking
-  
+   
 
 /*  capacity - l/min
  *  kFactor - "kFactor" in (pulse/s) l/min  -- Pulse Frequency = 7.5 * L/min

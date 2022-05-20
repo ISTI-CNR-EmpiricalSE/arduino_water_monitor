@@ -4,6 +4,13 @@ Arduino Water Monitor è un sistema di misurazione del flusso di un corso d'acqu
 
 ## Usage
 
+* ⛰️ Sensore a valle o a monte per prevenire rischio idreogeologico
+* ⛲ Misurazione flusso d'acqua
+* 〰️ Misurazione profondità acqua
+* 💧 Piccoli home-project
+
+<img width="511" alt="monitor seriale prova" src="https://user-images.githubusercontent.com/60266562/169485351-92b4cf81-6f6a-4303-90f6-2d6a52364ecf.png">
+
 ## Installation
 
 1. Installa Arduino IDE a questo [link](https://www.arduino.cc/en/software)
@@ -51,17 +58,30 @@ Delle librerie addizionali rispetto a quelle fornite dell'IDE di Arduino sono ne
 ### Configure Output InfluxDB 
 
 1. Vai alla cartella: /etc/telegraf
-2. Modifica i seguenti parametri del file di telegraf.conf: come mostrato in figura
+2. Modifica i seguenti parametri del file di telegraf.conf: inserisci il token creato in precedenza al passo (5), nome dell'organizzazione scelta durante la fase (2) e nome del bucket scelto al passo (4)
 
 <img width="698" alt="config telegraf" src="https://user-images.githubusercontent.com/60266562/169335862-265b50fe-0d67-4d7d-9049-6fae3fdabf79.png">
 
 3. Adesso hai configurato il bucket (del database) dove le informazioni del sensore vengono pubblicate
 
 ### Configure Input from MQTT topic sensor
+
 1. Sempre nel file di configurazione: telegraf.conf
 2. Modifica i seguenti parametri: indirizzo del tuo server broker, nome del topic, username, password
 
 <img width="634" alt="config-telegraf-mqttconsumer" src="https://user-images.githubusercontent.com/60266562/169343405-f72b591e-8f8a-40ba-9f06-fe02683fa0ef.png">
 
+### Adesso sei pronto per iniziare...
+
+1. Scarica lo sketch 
+2. Avvia l'IDE di Arduino
+3. Collega la porta seriale al Mac/Pc
+4. Sezione: strumenti/porta/dev.cu_yourport
+5. Puoi visualizzare cosa succede durante l'esecuzione dal monitor seriale
+
+### Avvia telegraf e influxdb (from cmd)
+
+> * influxd run
+> * telegraf --config  /etc/telegraf/telegraf.conf 
 
 

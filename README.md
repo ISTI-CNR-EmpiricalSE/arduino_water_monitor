@@ -78,7 +78,7 @@ Delle librerie addizionali rispetto a quelle fornite dell'IDE di Arduino sono ne
 ## InfluxDB Configuration (from dashboard)
 
 1. Dopo aver installato InfluxDB, accedi a localhost:8086
-2. Crea Username e Password
+2. Crea Username,Password e scegli il nome dell'organizzazione
 3. Accedi alla dashboard di Influx
 4. Crea un bucket: "your_bucket_name" e.g: "arduinowatermonitor"
 5. Data > Api Tokens > Generate Token Key > All Access API token

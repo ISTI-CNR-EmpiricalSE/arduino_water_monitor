@@ -77,6 +77,8 @@ Delle librerie addizionali rispetto a quelle fornite dell'IDE di Arduino sono ne
 
 ## InfluxDB Configuration (from dashboard)
 
+esegui 
+  >  influxd run 
 1. Dopo aver installato InfluxDB, accedi a localhost:8086
 2. Crea Username,Password e scegli il nome dell'organizzazione
 3. Accedi alla dashboard di Influx

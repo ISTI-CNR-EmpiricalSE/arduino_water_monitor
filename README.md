@@ -25,7 +25,7 @@ Puoi trovare diverse versioni del progetto:
 
 ### esp32
 
- 1) Arduino Sketch con Display LCD + Sensore profondità + Sensore ultrasuoni + Sensore Acqua YS-F201 (Telegraf&InfluxDB usage) [master/Esp32BoxMonitor]
+ 1) Arduino Sketch con Display LCD + Sensore profondità + Sensore ultrasuoni + Sensore Acqua YS-F201 (Telegraf&InfluxDB usage) [master/Esp32MonitorBox]
    * Le informazioni raccolte dal sensore riguardano
       - la profondità dell'acqua
       - il flusso dell'acqua

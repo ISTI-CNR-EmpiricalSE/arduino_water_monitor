@@ -72,6 +72,8 @@ Delle librerie addizionali rispetto a quelle fornite dell'IDE di Arduino sono ne
     *  inserisci il file scaricato al suo interno 
 5. WifiClientSecure: (Arduino Ide -> strumenti -> Scheda -> gestore scheda -> esp32)
 6. ArduinoMqttClient (Arduino Ide -> strumenti -> gestione librerie -> cerca ArduinoClientMqtt -> installa)
+7. DallasTemperature (Arduino Ide -> strumenti -> gestione librerie -> cerca DallasTemperature -> installa)
+8. OneWire: https://github.com/arendst/Tasmota/tree/development/lib/lib_basic/OneWire-Stickbreaker 
 
 # First Use
 

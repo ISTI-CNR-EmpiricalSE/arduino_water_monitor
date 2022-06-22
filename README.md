@@ -21,8 +21,9 @@ Puoi trovare diverse versioni del progetto:
    * Le informazioni sono stampate nel display LCD (16x2) 
 <img width="438" alt="Schermata 2022-05-20 alle 11 57 17" src="https://user-images.githubusercontent.com/60266562/169504316-a20389eb-8e48-49da-959e-918934d6c0de.png">
 
+## Dashboard InfluxDB example:
 
-<img width="1680" alt="influxDashboard" src="https://user-images.githubusercontent.com/60266562/174997405-53b6f1b1-8261-414e-b5b1-61618a5941bb.png">
+<img width="1632" alt="influxDashboard" src="https://user-images.githubusercontent.com/60266562/174997759-139656b4-ab44-44ef-96e9-0d9b69045849.png">
 
 
 ### esp32

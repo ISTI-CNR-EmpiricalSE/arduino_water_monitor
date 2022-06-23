@@ -115,13 +115,13 @@ esegui
 ### Configure Input from MQTT topic sensor
 
 1. Sempre nel file di configurazione: telegraf.conf
-2. Modifica i seguenti parametri: indirizzo del tuo server broker, nome del topic, username, password
-
+2. Modifica i seguenti parametri: indirizzo del tuo server broker (dovrebbe iniziare con mqtt://) , nome del topic, username e password server broker
+3. Se non hai un server broker creato in precedenza scarica MQTT explorer e crea una MQTT Connection nuova
 <img width="634" alt="config-telegraf-mqttconsumer" src="https://user-images.githubusercontent.com/60266562/169343405-f72b591e-8f8a-40ba-9f06-fe02683fa0ef.png">
 
 ### Adesso sei pronto per iniziare...
 
-1. Scarica lo sketch 
+1. Scarica lo sketch: (uno dei file .ino della cartella master)
 2. Avvia l'IDE di Arduino
 3. Collega la porta seriale al Mac/Pc
 4. Sezione: strumenti/porta/dev.cu_yourport

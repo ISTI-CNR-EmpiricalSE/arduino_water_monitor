@@ -123,10 +123,12 @@ esegui
 ### Adesso sei pronto per iniziare...
 
 1. Scarica lo sketch: (uno dei file .ino della cartella master)
-2. Avvia l'IDE di Arduino
-3. Collega la porta seriale al Mac/Pc
-4. Sezione: strumenti/porta/dev.cu_yourport
-5. Puoi visualizzare cosa succede durante l'esecuzione dal monitor seriale
+2. Alcuni parametri sono da modificare: il nome della reta (ssid), la password, l'indirizzo del broker, username_broker
+pwd_broker. Il parametro your_certificate deve essere prelevato dal server MQTT creato da te in precedenza, copia-incollalo tra BEGIN-CERTIFICATE e END-CERTIFICATE
+3. Avvia l'IDE di Arduino
+4. Collega la porta seriale al Mac/Pc
+5. Sezione: strumenti/porta/dev.cu_yourport
+6. Puoi visualizzare cosa succede durante l'esecuzione dal monitor seriale
 
 ### Avvia telegraf e influxdb (from cmd)
 

@@ -97,13 +97,13 @@ esegui
 2. Crea Username,Password e scegli il nome dell'organizzazione
 3. Accedi alla dashboard di Influx
 4. Crea un bucket: "your_bucket_name" e.g: "arduinowatermonitor"
-5. Data > Api Tokens > Generate Token Key > All Access API token
+5. Data > Tokens > Generate Token Key > All Access API token 
 
 ## Telegraf Configuration (from cmd)
 
 ### Configure Output InfluxDB 
 
-1. Vai alla cartella: /etc/telegraf
+1. Cerca il file: telegraf.conf e aprilo per la modifica
 2. Modifica i seguenti parametri del file di telegraf.conf: inserisci il token creato in precedenza al passo (5), nome dell'organizzazione scelta durante la fase (2) e nome del bucket scelto al passo (4)
 
 <img width="698" alt="config telegraf" src="https://user-images.githubusercontent.com/60266562/169335862-265b50fe-0d67-4d7d-9049-6fae3fdabf79.png">

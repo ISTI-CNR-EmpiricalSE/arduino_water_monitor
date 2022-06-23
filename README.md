@@ -81,6 +81,7 @@ Delle librerie addizionali rispetto a quelle fornite dell'IDE di Arduino sono ne
  
 5. WifiClientSecure: (Arduino Ide -> strumenti -> Scheda -> gestore scheda -> esp32 (2.0.3) )
     - Andare su Arduino/Preferenze e inserisci il seguente URL: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+    - Selezionare la scheda: Arduino Ide -> strumenti -> scheda -> ESP32 Arduino -> DOIT ESP32 DEVKIT V1
 7. ArduinoMqttClient (0.1.5): (Arduino Ide -> strumenti -> gestione librerie -> cerca ArduinoMqttClient -> installa)
 8. DallasTemperature (3.9.0): (Arduino Ide -> strumenti -> gestione librerie -> cerca DallasTemperature -> installa)
 9. (nota: Quando il prompt chiede se installare la dipendeza da OneWire, rispondere installa soltanto DallasTemperature)

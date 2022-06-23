@@ -78,10 +78,12 @@ Delle librerie addizionali rispetto a quelle fornite dell'IDE di Arduino sono ne
 3. LiquidCrystal_I2C: [download](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
     *  crea la directory "LiquidCrystal_I2C" in Documenti/Arduino/libraries
     *  inserisci il file scaricato al suo interno 
+ 
 5. WifiClientSecure: (Arduino Ide -> strumenti -> Scheda -> gestore scheda -> esp32)
-6. ArduinoMqttClient (Arduino Ide -> strumenti -> gestione librerie -> cerca ArduinoClientMqtt -> installa)
-7. DallasTemperature (Arduino Ide -> strumenti -> gestione librerie -> cerca DallasTemperature -> installa)
-8. OneWire: [updated version](https://github.com/arendst/Tasmota/tree/development/lib/lib_basic/OneWire-Stickbreaker) 
+    - Andare su Arduino/Preferenze e inserisci il seguente URL: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+7. ArduinoMqttClient (Arduino Ide -> strumenti -> gestione librerie -> cerca ArduinoClientMqtt -> installa)
+8. DallasTemperature (Arduino Ide -> strumenti -> gestione librerie -> cerca DallasTemperature -> installa)
+9. OneWire: [updated version](https://github.com/arendst/Tasmota/tree/development/lib/lib_basic/OneWire-Stickbreaker) 
 
 # First Use
 

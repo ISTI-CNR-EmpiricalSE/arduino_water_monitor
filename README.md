@@ -32,6 +32,9 @@ Puoi trovare diverse versioni del progetto:
    * Le informazioni raccolte dal sensore riguardano
       - la profondità dell'acqua
       - il flusso dell'acqua
+      - temperatura dell'acqua
+      - temperatura esterna
+      - luminosità ambientale
    * lo sketch arduino invia le informazioni dei sensori in maniera diretta al topic MQTT 
    * il client Telegraf si occupa di leggere i messaggi del topic MQTT e di registrarli nel database Influxdb (guarda la guida sotto per l'installazione e configurazione)
 
@@ -40,6 +43,8 @@ Puoi trovare diverse versioni del progetto:
 * ⛰️ Sensore a valle o a monte per prevenire rischio idreogeologico
 * ⛲ Misurazione flusso d'acqua
 * 〰️ Misurazione profondità acqua
+* :high_brightness: Luminosità ambientale
+* :thermometer: Temperatura ambiente e acqua
 * 💧 Piccoli home-project
 
 <img width="511" alt="monitor seriale prova" src="https://user-images.githubusercontent.com/60266562/169485351-92b4cf81-6f6a-4303-90f6-2d6a52364ecf.png">

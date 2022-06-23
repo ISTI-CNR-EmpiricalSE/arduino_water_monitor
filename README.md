@@ -104,7 +104,9 @@ esegui
 ### Configure Output InfluxDB 
 
 1. Cerca il file: telegraf.conf e aprilo per la modifica
-2. Modifica i seguenti parametri del file di telegraf.conf: inserisci il token creato in precedenza al passo (5), nome dell'organizzazione scelta durante la fase (2) e nome del bucket scelto al passo (4)
+2. All'interno della sezione OUTPUT PLUGINS cerca [[outputs.influxdb_v2]]
+3. Decommentare urls = ["http://127.0.0.1:8086"]
+4. Modifica i seguenti parametri del file di telegraf.conf: inserisci il token creato in precedenza al passo (5), nome dell'organizzazione scelta durante la fase (2) e nome del bucket scelto al passo (4)
 
 <img width="698" alt="config telegraf" src="https://user-images.githubusercontent.com/60266562/169335862-265b50fe-0d67-4d7d-9049-6fae3fdabf79.png">
 

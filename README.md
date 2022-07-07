@@ -137,6 +137,6 @@ pwd_broker. Il parametro your_certificate deve essere prelevato dal server MQTT 
 
 > * influxd run (terminale)
 > * telegraf --config  /etc/telegraf/telegraf.conf (in un altro terminale) 
-(il percorso telegraf.conf, può variare assicurarsi di inserire quello corretto)
+NB. il percorso telegraf.conf, può variare assicurarsi di inserire quello corretto
 
 

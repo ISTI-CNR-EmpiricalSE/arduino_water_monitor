@@ -127,12 +127,15 @@ esegui
 pwd_broker. Il parametro your_certificate deve essere prelevato dal server MQTT creato da te in precedenza, copia-incollalo tra BEGIN-CERTIFICATE e END-CERTIFICATE
 3. Avvia l'IDE di Arduino
 4. Collega la porta seriale al Mac/Pc
-5. Sezione: strumenti/porta/dev.cu_yourport
-6. Puoi visualizzare cosa succede durante l'esecuzione dal monitor seriale
+5. Sezione: strumenti/porta/dev.cu<port_name> dove <port_name> è il nome della porta associata alla seriale dal tuo computer.
+6. Effettuare upload dello sketch sulla scheda (freccia in alto a sinistra)
+7. Selezioneare il monitor seriale e impostarlo a (115200 bound)
+8. Dovresti vedere "Done uploading", allora lo sketch è caricato sulla scheda
+9. Puoi visualizzare cosa succede durante l'esecuzione dal monitor seriale
 
 ### Avvia telegraf e influxdb (from cmd)
 
-> * influxd run
-> * telegraf --config  /etc/telegraf/telegraf.conf 
+> * influxd run (terminale)
+> * telegraf --config  /etc/telegraf/telegraf.conf (in un altro terminale) (il percorso telegraf.conf, può variare assicurarsi di inserire quello corretto
 
 
